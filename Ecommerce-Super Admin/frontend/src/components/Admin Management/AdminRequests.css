@@ -1,0 +1,94 @@
+.adminRequests {
+    height: 750px;
+    width: auto;
+    padding: 25px 50px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+  }
+  
+  .adminRequestsTitle {
+    width: 100%;
+    font-size: 24px;
+    color: #34495e;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+  }
+  
+  .addButton {
+    text-decoration: none;
+    color: purple;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid purple;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(252, 181, 252, 0.548);
+    transition: all 0.3s ease;
+  }
+  
+  .addButton:hover {
+    background-color: rgba(255, 172, 255, 0.745);
+  }
+  
+  .adminRequestsList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .adminRequestItem {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+  }
+  
+  .adminRequestDetails p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #0e0417;
+  }
+  
+  .adminRequestActions {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .approveButton,
+  .rejectButton {
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .approveButton {
+    background-color: #28a745;
+    color: white;
+    border: 1px solid #28a745;
+  }
+  
+  .approveButton:hover {
+    background-color: #218838;
+  }
+  
+  .rejectButton {
+    background-color: #dc3545;
+    color: white;
+    border: 1px solid #dc3545;
+  }
+  
+  .rejectButton:hover {
+    background-color: #c82333;
+  }
+  

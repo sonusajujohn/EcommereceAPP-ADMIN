@@ -1,0 +1,89 @@
+
+.productlist {
+    height: 750px;
+    width: auto;
+    padding: 25px 50px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+
+  }
+  
+  .productlistTitle {
+    width: 100%;
+    font-size: 24px;
+    color: #34495e;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+  }
+  
+  .addButton {
+    text-decoration: none;
+    color: purple;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid purple;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(252, 181, 252, 0.548);
+    transition: all 0.3s ease;
+  }
+  
+  .addButton:hover {
+    background-color:rgba(255, 172, 255, 0.745);
+  }
+  
+  .datagrid {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cellAction {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .viewButton {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: darkblue;
+    border: 1px solid darkblue;
+    cursor: pointer;
+    background-color: rgba(0, 0, 139, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .viewButton:hover {
+    background-color: rgba(0, 0, 139, 0.2);
+  }
+  
+  .editButton{
+      padding: 5px 10px;
+      border-radius: 5px;
+      color: green;
+      border: 1px solid green;
+      cursor: pointer;
+      background-color: #e8f5e9;
+      transition: all 0.3s ease;
+    }
+
+  .deleteButton {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: crimson;
+    border: 1px solid crimson;
+    cursor: pointer;
+    background-color: rgba(220, 20, 60, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .deleteButton:hover {
+    background-color: rgba(220, 20, 60, 0.2);
+  }

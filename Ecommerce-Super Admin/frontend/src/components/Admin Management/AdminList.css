@@ -1,0 +1,132 @@
+/* General container styling */
+.adminListContainer {
+    height: 750px;
+    width: auto;
+    padding: 25px 50px;
+    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Title */
+.adminListTitle {
+    width: 100%;
+    font-size: 24px;
+    color: #34495e;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+/* Table container (data grid) */
+.datagrid {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: 0px;
+
+}
+
+/* Table header styling */
+.tableHeader {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: #ecf0f1;
+    padding: 15px;
+    font-weight: 600;
+    color: #2c3e50;
+    border-radius: 10px 10px 0 0;
+}
+
+.tableHeader div {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Table rows */
+.tableRow {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: #ffffff;
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.tableRow div {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Stripe table rows */
+.tableRow:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Admin Ban Button */
+.banButton {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: crimson;
+    border: 1px solid crimson;
+    cursor: pointer;
+    background-color: rgba(220, 20, 60, 0.1);
+    transition: all 0.3s ease;
+}
+
+.banButton:hover {
+    background-color: rgba(220, 20, 60, 0.2);
+}
+
+/* Action buttons (if you want additional action buttons like view or edit) */
+.cellAction {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* View Button (example if needed) */
+.viewButton {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: darkblue;
+    border: 1px solid darkblue;
+    cursor: pointer;
+    background-color: rgba(0, 0, 139, 0.1);
+    transition: all 0.3s ease;
+}
+
+.viewButton:hover {
+    background-color: rgba(0, 0, 139, 0.2);
+}
+
+/* Edit Button (example if needed) */
+.editButton {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: green;
+    border: 1px solid green;
+    cursor: pointer;
+    background-color: #e8f5e9;
+    transition: all 0.3s ease;
+}
+
+.editButton:hover {
+    background-color: #c8e6c9;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .tableHeader, .tableRow {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .banButton {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+}

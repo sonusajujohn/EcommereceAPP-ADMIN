@@ -1,0 +1,59 @@
+/* Default (Light Mode) */
+
+* {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+}
+body {
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+body.dark {
+  background-color: #121212; /* Dark background */
+  color: white; /* Light text color */
+}
+
+body.dark .sidebar {
+  background-color: #333; /* Sidebar background for dark mode */
+}
+
+body.dark .navbar {
+  background-color: #222; /* Navbar background */
+}
+
+/* Other Components in Dark Mode */
+body.dark .card {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+body.dark .table {
+  background-color: #1e1e1e;
+}
+
+body.dark .table .tableCell {
+  color: white;
+}
+
+
+
+
+body.dark input, body.dark select, body.dark textarea {
+  background-color: #333;
+  color: white;
+  border: 1px solid #555;
+}
+
+body.dark button {
+  background-color: #444;
+  color: white;
+  border: none;
+}
+
+/* Transition effects */
+body, .sidebar, .navbar, .card {
+  transition: all 0.3s ease;
+}

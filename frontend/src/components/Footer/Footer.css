@@ -1,0 +1,154 @@
+/* Footer.css */
+
+/* Main footer container */
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 50px 10px;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  gap: 100px;
+  margin-bottom: -100px;
+  margin-top:0px ;
+}
+
+
+/* Container for footer content */
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin-left: 150px;
+  margin-top: 30px;
+}
+
+/* Left, center, and right content sections */
+.footer-content-left,
+.footer-content-center,
+.footer-content-right {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-content-left img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 20px;
+  margin-left:0px;
+  margin-top: 10px;
+}
+
+.footer-content-left p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 10px 0;
+  margin-left: 20px;
+}
+
+/* Social media icons */
+.footer-social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.footer-social-icons img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.footer-social-icons img:hover {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+}
+
+
+/* Section titles */
+.footer-content-center h2,
+.footer-content-right h2,
+.footer-extra-info h2 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: rgb(191, 0, 191);
+  font-weight: 600;
+}
+
+/* Footer link styles */
+.footer-content-center ul,
+.footer-content-right ul,
+.footer-extra-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-content-center ul li,
+.footer-content-right ul li,
+.footer-extra-info ul li {
+  margin: 8px 0;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.footer-content-center ul li:hover,
+.footer-content-right ul li:hover ,
+.footer-extra-info ul li:hover{
+  color: rgb(255, 203, 71);
+}
+
+/* Horizontal rule between sections */
+hr {
+  border: 0.5px solid #444;
+  width: 100%;
+  margin: 20px 0;
+}
+
+/* Copyright text */
+.footer-copyright {
+  font-size: 0.85rem;
+  margin-top: 30px;
+  margin-left: 450px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 750px) {
+  .footer {
+    padding: 30px 10px;
+  }
+
+  /* Ensure the footer content is centered vertically and horizontally */
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-content-left,
+  .footer-content-center,
+  .footer-content-right {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Center social icons */
+  .footer-social-icons {
+    justify-content: center;
+  }
+
+  /* Adjust the padding for the left content */
+  .footer-content-left p {
+    margin-left: 0;
+  }
+
+  /* Adjust the copyright alignment */
+  .footer-copyright {
+    margin-left: 0;
+  }
+}
+
